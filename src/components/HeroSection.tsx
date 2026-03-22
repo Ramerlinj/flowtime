@@ -3,7 +3,7 @@ import heroPhone from "@/assets/hero-phone.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="relative min-h-screen pt-24">
+    <section id="inicio" className="relative min-h-screen">
       {/* Subtle radial glow */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(43_80%_55%/0.06)_0%,transparent_70%)]" />
 

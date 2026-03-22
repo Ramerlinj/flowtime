@@ -20,7 +20,7 @@ const BetaSection = () => {
         <div className="glow-gold rounded-2xl border border-primary/30 bg-card p-8 sm:p-12">
           <div className="mb-8 text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-gold">
-              🔥 Cupos Limitados
+              Cupos Limitados
             </span>
             <h2 className="mt-6 text-3xl font-black tracking-tight sm:text-4xl">
               Únete al{" "}
@@ -43,7 +43,7 @@ const BetaSection = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="tu@email.com"
+                placeholder="example@email.com"
                 className="w-full rounded-lg border border-border bg-input px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
@@ -69,7 +69,7 @@ const BetaSection = () => {
                 required
                 value={whatsapp}
                 onChange={(e) => setWhatsapp(e.target.value)}
-                placeholder="+52 123 456 7890"
+                placeholder="Ej: 000-000-0000"
                 className="w-full rounded-lg border border-border bg-input px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
