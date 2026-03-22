@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import heroPhone from "@/assets/hero-phone.jpg";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const HeroSection = () => {
   return (
@@ -9,7 +10,7 @@ const HeroSection = () => {
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 py-20 lg:flex-row lg:py-32">
         {/* Text */}
-        <div className="flex-1 space-y-8">
+        <ScrollReveal className="flex-1 space-y-8">
           <h1 className="text-4xl font-black leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
             FLOWTIME: Tu negocio en su estado máximo de{" "}
             <span className="text-gold">fluidez</span>
@@ -31,10 +32,10 @@ const HeroSection = () => {
               <Check size={16} className="text-gold" /> Descuentos de fundador
             </span>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* Image */}
-        <div className="flex-1">
+        <ScrollReveal className="flex-1" delay={180}>
           <div className="overflow-hidden rounded-2xl border border-border shadow-2xl">
             <img
               src={heroPhone}
@@ -43,7 +44,7 @@ const HeroSection = () => {
               loading="lazy"
             />
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

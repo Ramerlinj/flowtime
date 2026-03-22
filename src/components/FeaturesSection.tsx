@@ -1,4 +1,5 @@
 import { CalendarDays, MessageSquare, BarChart3 } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const features = [
   {
@@ -22,19 +23,20 @@ const FeaturesSection = () => {
   return (
     <section id="soluciones" className="py-24">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-16 text-center">
+        <ScrollReveal className="mb-16 text-center">
           <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
             Problema vs <span className="text-gold">Solución</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
             Todo lo que necesitas para profesionalizar tu negocio
           </p>
-        </div>
+        </ScrollReveal>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {features.map((f) => (
-            <div
+          {features.map((f, index) => (
+            <ScrollReveal
               key={f.title}
+              delay={index * 120}
               className="rounded-xl border border-border bg-card p-8 transition-colors hover:border-primary/30"
             >
               <div className="mb-6 inline-flex rounded-lg border border-primary/30 bg-primary/10 p-3">
@@ -44,7 +46,7 @@ const FeaturesSection = () => {
               <p className="text-sm leading-relaxed text-muted-foreground">
                 {f.description}
               </p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

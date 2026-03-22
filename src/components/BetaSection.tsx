@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { toast } from "sonner";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const BetaSection = () => {
   const [email, setEmail] = useState("");
@@ -17,7 +18,7 @@ const BetaSection = () => {
   return (
     <section id="beta" className="py-24">
       <div className="mx-auto max-w-2xl px-6">
-        <div className="glow-gold rounded-2xl border border-primary/30 bg-card p-8 sm:p-12">
+        <ScrollReveal className="glow-gold rounded-2xl border border-primary/30 bg-card p-8 sm:p-12">
           <div className="mb-8 text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-gold">
               Cupos Limitados
@@ -83,7 +84,7 @@ const BetaSection = () => {
               Al unirte aceptas recibir comunicaciones exclusivas sobre FLOWTIME
             </p>
           </form>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );
