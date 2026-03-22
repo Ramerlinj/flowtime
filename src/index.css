@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 5% 8%;
+    --foreground: 40 10% 90%;
+
+    --card: 30 5% 12%;
+    --card-foreground: 40 10% 90%;
+
+    --popover: 30 5% 12%;
+    --popover-foreground: 40 10% 90%;
+
+    --primary: 43 80% 55%;
+    --primary-foreground: 30 5% 8%;
+
+    --secondary: 30 5% 16%;
+    --secondary-foreground: 40 10% 90%;
+
+    --muted: 30 5% 20%;
+    --muted-foreground: 30 5% 55%;
+
+    --accent: 43 80% 55%;
+    --accent-foreground: 30 5% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 5% 20%;
+    --input: 30 5% 18%;
+    --ring: 43 80% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 30 5% 10%;
+    --sidebar-foreground: 40 10% 90%;
+    --sidebar-primary: 43 80% 55%;
+    --sidebar-primary-foreground: 30 5% 8%;
+    --sidebar-accent: 30 5% 16%;
+    --sidebar-accent-foreground: 40 10% 90%;
+    --sidebar-border: 30 5% 20%;
+    --sidebar-ring: 43 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: hsl(43, 80%, 55%);
+  }
+
+  .bg-gold {
+    background-color: hsl(43, 80%, 55%);
+  }
+
+  .border-gold {
+    border-color: hsl(43, 80%, 55%);
+  }
+
+  .gradient-gold {
+    background: linear-gradient(135deg, hsl(43, 80%, 55%), hsl(38, 70%, 45%));
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 40px -10px hsl(43 80% 55% / 0.3);
+  }
+}
